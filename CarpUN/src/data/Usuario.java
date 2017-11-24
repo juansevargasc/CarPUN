@@ -11,12 +11,12 @@ package data;
  */
 public class Usuario
 {
-    String nombre;
-    String nombrDeUsuario;
-    String clave;
-    String universidad;
-    long telefono;
-    String correo;
+    protected String nombre;
+    protected String nombrDeUsuario; //Nombre de usuario debe ser único
+    protected String clave;
+    protected String universidad;
+    protected long telefono;
+    protected String correo;
     
     //Constructores
     public Usuario(String nombrDeUsuario, String clave)
@@ -35,6 +35,10 @@ public class Usuario
         this.correo = correo;
     }
     
+    public Usuario()
+    {
+        
+    }
     
     
     //Getters and Setters

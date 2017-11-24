@@ -18,6 +18,12 @@ public class Conductor extends Usuario
         super(nombrDeUsuario, clave);
         this.ruta = new Ruta(this); // Crea una ruta con conductor
     }
+
+    public Conductor() 
+    {
+        
+    }
+    
     
     
 }

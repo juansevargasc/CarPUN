@@ -15,6 +15,14 @@ public class Carpooling
 {
     private CarpUN programa;
     
+    //Constructor
+
+    public Carpooling() 
+    {
+        this.programa = new CarpUN();
+    }
+    
+    
     /**
      * Registro de usuario
      * @param nombre
@@ -31,5 +39,7 @@ public class Carpooling
         return this.programa.addUsuario(nombre, nombrDeUsuario, clave, universidad, telefono, correo);
     }
     
+    
+   
     
 }

@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class Pasajero extends Usuario
 {
-    ArrayList<Ruta> posMatch;
+    private ArrayList<Ruta> posMatch;
     
     public Pasajero(String nombrDeUsuario, String clave) 
     {
@@ -21,6 +21,10 @@ public class Pasajero extends Usuario
         this.posMatch = null;
     }
     
+    public Pasajero()
+    {
+        
+    }
     
     
 }
