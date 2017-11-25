@@ -22,22 +22,46 @@ public class CarpUN
         this.numeroUsuarios = 0;
     }
     
-    public boolean addUsuario(String nombre, String nombrDeUsuario, String clave, 
+    /**
+     * Añade un usuario - conductro
+     * @param nombre
+     * @param nombrDeUsuario
+     * @param clave
+     * @param universidad
+     * @param telefono
+     * @param correo
+     * @return 
+     */
+    public boolean addUsuarioConductor(String nombre, String nombrDeUsuario, String clave, 
             String universidad, long telefono, String correo)
     {
-        Usuario usuario = new Usuario(nombre, nombrDeUsuario, clave, universidad, telefono, correo);
+        Usuario conductor = new Conductor(nombre, nombrDeUsuario, clave, universidad, telefono, correo);
         this.numeroUsuarios++;
-        return this.usuarios.add(usuario);   
+        return this.usuarios.add(conductor);   
     }
     
-    /*
-    public boolean crearConductor(String nombrUsuario)
+    /**
+     * 
+     * @param nombre
+     * @param nombrDeUsuario
+     * @param clave
+     * @param universidad
+     * @param telefono
+     * @param correo
+     * @return 
+     */
+    public boolean addUsuarioPasajero(String nombre, String nombrDeUsuario, String clave, 
+            String universidad, long telefono, String correo)
     {
-        
-        Conductor conductor = new Conductor(nombrUsuario, nombrUsuario);
-        
+        Usuario pasajero = new Pasajero(nombre, nombrDeUsuario, clave, universidad, telefono, correo);
+        this.numeroUsuarios++;
+        return this.usuarios.add(pasajero);   
     }
-    */
+    
+    public void replaceUsuario(Usuario u, int index)
+    {
+        this.usuarios.add(index, u);
+    }
     
     public Usuario getUsusario(String nombrUsuario)
     {

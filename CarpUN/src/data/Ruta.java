@@ -103,9 +103,7 @@ public class Ruta
         return conductorRuta;
     }
 
-    public void setConductorRuta(Conductor conductorRuta) {
-        this.conductorRuta = conductorRuta;
-    }
+    
     
     
     

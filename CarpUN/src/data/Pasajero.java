@@ -15,11 +15,20 @@ public class Pasajero extends Usuario
 {
     private ArrayList<Ruta> posMatch;
     
+    //Constructores
     public Pasajero(String nombrDeUsuario, String clave) 
     {
         super(nombrDeUsuario, clave);
         this.posMatch = null;
     }
+
+    public Pasajero(String nombre, String nombrDeUsuario, String clave, String universidad, long telefono, String correo) 
+    {
+        super(nombre, nombrDeUsuario, clave, universidad, telefono, correo);
+        this.posMatch = null;
+    }
+    
+    
     
     public Pasajero()
     {

@@ -22,7 +22,7 @@ public class mainCP
         
         Conductor c1 = (Conductor) u1;
        
-        System.out.println("2. Clase u1: " + u1.getClass().getSimpleName());
+        //System.out.println("2. Clase u1: " + u1.getClass().getSimpleName());
         
     }
     
